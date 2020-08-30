@@ -47,27 +47,32 @@ li a {
 	</ul>
 
 	<p>
-		First Name &emsp; : 
+		First Name &emsp; : <?php echo $_GET["firstName"]; ?>
 
 	</p>	
 	<p>
-		Email	&emsp;&emsp;&emsp;&emsp;:  
+		Email	&emsp;&emsp;&emsp;&emsp;:  <?php echo $_GET["email"]; ?>
 
 	</p>	
 	<p>
-		Phone No&emsp;&emsp;  :  
+		Phone No&emsp;&emsp;  :  <?php echo $_GET["mobile"]; ?>
 
 	</p>	
 	<p>
-		Gender  &emsp;&emsp;&emsp;:  
+		Gender  &emsp;&emsp;&emsp;:  <?php echo $_GET["gender"]; ?>
 
 	</p>	
 	<p>
-		Reason &emsp;&emsp;&emsp; :  
+		<?php
+		$arr = $_GET["technology"];
+		$reason = implode(", ",$arr);
+		?>
+
+		Reason &emsp;&emsp;&emsp; :  <?php echo $reason; ?>
 
 	</p>	
 	<p>
-		College &emsp;&emsp;&emsp; :  
+		College &emsp;&emsp;&emsp; :  <?php echo $_GET["college"]; ?>
 
 	</p>	
 
